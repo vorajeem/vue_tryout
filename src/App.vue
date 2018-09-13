@@ -4,18 +4,15 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <myheader></myheader>
     <!-- <button class=""></button> -->
-    
-<div>
-  <unitselect></unitselect>
-<channelselect></channelselect>
-
-</div>
-  <li><a href="www.instrotech.co.za">Instrotech.co.za</a></li>
-    <mainview comment="Welcome to Your Vue.js App"></mainview>
-
-    <!-- <button v-on:click="myClickHandler">Click ekse</button> -->
-    <!-- <button v-on:click="changeMessage">Click me!</button> -->
-
+    <div>
+        <logocomponent></logocomponent>
+    </div>
+    <div>
+      <unitselect></unitselect>
+      <channelselect></channelselect>
+    </div>
+    <li><a href="www.instrotech.co.za">Instrotech.co.za</a></li>
+      <mainview comment="Welcome to Your Vue.js App"></mainview>
     <myfooter></myfooter>
   </div>
 </template>
@@ -27,7 +24,7 @@ import myheader from './components/myheader.vue';
 import myfooter from './components/myfooter.vue';
 import channelselect from './components/channelselect.vue';
 import unitselect from './components/unitselect.vue';
-
+import logocomponent from './components/logocomponent.vue';
 
 export default {
   name: 'app',
@@ -36,6 +33,7 @@ export default {
   },
   components: {
     mainview,
+    logocomponent,
     myheader,
     myfooter,
     channelselect,
