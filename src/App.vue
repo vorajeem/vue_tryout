@@ -2,16 +2,18 @@
 <!-- place html here -->
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <Hello comment="Welcome to Your Vue.js App"/>
-    <spectrumview></spectrumview>
-    <!-- <button v-on:click="myClickHandler">Click ekse</button>
-    <button v-on:click="changeMessage">Click me!</button> -->
+    <mainview comment="Welcome to Your Vue.js App"/></mainview>
+    <spectrumview>
+      <mainview comment="salaam"></mainview>
+    </spectrumview>
+    <!-- <button v-on:click="myClickHandler">Click ekse</button> -->
+    <!-- <button v-on:click="changeMessage">Click me!</button> -->
   </div>
 </template>
 
 <script>
 // place JavaScript logic here
-import Hello from './components/Hello.vue';
+import mainview from './components/mainview.vue';
 import spectrumview from './components/spectrumview.vue';
 export default {
   name: 'app',
@@ -19,7 +21,7 @@ export default {
     message: 'Start message'
   },
   components: {
-    Hello,
+    mainview,
     spectrumview
   },
   methods: {

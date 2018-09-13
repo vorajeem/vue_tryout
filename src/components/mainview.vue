@@ -1,12 +1,12 @@
 <template>
-  <div class="HelloComponent">
-    Hello there
+  <div class="mainview">
+    Main  View Component
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Hello',
+  name: 'mainview',
   props: {
     comment: String
   }

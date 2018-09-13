@@ -1,7 +1,7 @@
 <template lang="html">
 
   <section class="spectrumview">
-    <h1>spectrum-view Component</h1>
+    <h1>Spectrum view component works</h1>
   </section>
 
 </template>
@@ -14,14 +14,16 @@
 
     },
     data() {
+      //data goes here
       return {
 
       }
     },
-    methods: {
+    methods: {//methods go here
 
     },
     computed: {
+      //computed properties go here
 
     }
 }
