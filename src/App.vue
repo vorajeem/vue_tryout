@@ -1,22 +1,36 @@
-<template>
+<template> 
+<!-- place html here -->
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Hello comment="Welcome to Your Vue.js App"/>
+    <spectrumview></spectrumview>
+    <!-- <button v-on:click="myClickHandler">Click ekse</button>
+    <button v-on:click="changeMessage">Click me!</button> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// place JavaScript logic here
+import Hello from './components/Hello.vue';
+import spectrumview from './components/spectrumview.vue';
 export default {
   name: 'app',
+  props: {
+    message: 'Start message'
+  },
   components: {
-    HelloWorld
+    Hello,
+    spectrumview
+  },
+  methods: {
+    
   }
 }
+
 </script>
 
 <style>
+/* place CSS here */
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
