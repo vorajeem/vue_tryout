@@ -1,8 +1,8 @@
 <template lang="html">
-
-  <section class="spectrumview">
+<div class="border border-warning">
     <h1>Spectrum view component works</h1>
-  </section>
+
+</div>
 
 </template>
 

@@ -1,14 +1,14 @@
 <template lang="html">
 
-  <section class="header">
-    <h1>header Component</h1>
+  <section class="viewselect">
+    <h1>viewselect Component</h1>
   </section>
 
 </template>
 
 <script lang="js">
   export default  {
-    name: 'header',
+    name: 'viewselect',
     props: [],
     mounted() {
 
@@ -28,7 +28,7 @@
 </script>
 
 <style scoped lang="scss">
-  .header {
+  .viewselect {
 
   }
 </style>

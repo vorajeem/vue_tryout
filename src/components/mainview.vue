@@ -1,14 +1,20 @@
 <template>
-  <div class="mainview">
-    Main  View Component
+  <div class="mainview border">
+    Main  View Component - {{comment}}
+    <spectrumview></spectrumview>
   </div>
 </template>
 
 <script>
+
+import spectrumview from './spectrumview.vue';
 export default {
   name: 'mainview',
   props: {
     comment: String
+  },
+  components: {
+    spectrumview
   }
 }
 </script>
