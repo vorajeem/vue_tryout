@@ -13,6 +13,8 @@
     </div>
     <li><a href="www.instrotech.co.za">Instrotech.co.za</a></li>
       <mainview comment="Welcome to Your Vue.js App"></mainview>
+
+      <pageselect></pageselect>
     <myfooter></myfooter>
   </div>
 </template>
@@ -25,6 +27,7 @@ import myfooter from './components/myfooter.vue';
 import channelselect from './components/channelselect.vue';
 import unitselect from './components/unitselect.vue';
 import logocomponent from './components/logocomponent.vue';
+import pageselect from './components/pageselect';
 
 export default {
   name: 'app',
@@ -37,7 +40,8 @@ export default {
     myheader,
     myfooter,
     channelselect,
-    unitselect
+    unitselect,
+    pageselect
   },
   methods: {
     
